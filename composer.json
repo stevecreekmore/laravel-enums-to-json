@@ -1,47 +1,43 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "creekmore108/laravel-enums-to-json",
+    "description": "This package creates a json file from a list of values in enum",
     "keywords": [
-        ":vendor_name",
+        "Steven Creekmore",
         "laravel",
-        ":package_slug"
+        "laravel-enums-to-json"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/creekmore108/laravel-enums-to-json",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Steven Creekmore",
+            "email": "creekmore108@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.4",
+        "illuminate/contracts": "^10.0||^11.0||^12.0",
         "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^10.0||^11.0||^12.0"
+        "spatie/php-structure-discoverer": "^2.3"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
         "nunomaduro/collision": "^8.1.1||^7.10.0",
-        "larastan/larastan": "^2.9||^3.0",
         "orchestra/testbench": "^10.0.0||^9.0.0||^8.22.0",
         "pestphp/pest": "^3.0",
         "pestphp/pest-plugin-arch": "^3.0",
-        "pestphp/pest-plugin-laravel": "^3.0",
-        "phpstan/extension-installer": "^1.3||^2.0",
-        "phpstan/phpstan-deprecation-rules": "^1.1||^2.0",
-        "phpstan/phpstan-phpunit": "^1.3||^2.0",
-        "spatie/laravel-ray": "^1.35"
+        "pestphp/pest-plugin-laravel": "^3.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Creekmore108\\LaravelEnumsToJson\\": "src/",
+            "Creekmore108\\LaravelEnumsToJson\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Creekmore108\\LaravelEnumsToJson\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +59,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Creekmore108\\LaravelEnumsToJson\\LaravelEnumsToJsonServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelEnumsToJson": "Creekmore108\\LaravelEnumsToJson\\Facades\\LaravelEnumsToJson"
             }
         }
     },
